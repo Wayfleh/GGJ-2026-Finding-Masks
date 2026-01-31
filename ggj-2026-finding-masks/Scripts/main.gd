@@ -8,13 +8,17 @@ var mask_sprites: Array[CompressedTexture2D] = [
 var mask_cache : Array[Mask] = []
 
 func _ready() -> void:
-	mask_manager(10, 1)
-
+	#mask_manager(10, 1)
+	pass
+	
 func _unhandled_input(event: InputEvent) -> void:
-	if event is not InputEventMouseButton and event.button_index != MOUSE_BUTTON_LEFT:
+	if event is not InputEventMouseButton:
 		return
-	if mask_cache == null:
+	if event.button_index != MOUSE_BUTTON_LEFT:
 		return
+	if mask_cache.is_empty():
+		return
+	print(mask_cache[0])
 	#If player left clicks on one or more masks
 #this will spawn masks at random positions around the map
 func mask_manager(num: int, mask_index: int) -> void:

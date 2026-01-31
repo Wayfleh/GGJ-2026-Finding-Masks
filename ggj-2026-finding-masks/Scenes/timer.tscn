@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://t0j2jdb566ee"]
+
+[ext_resource type="Script" uid="uid://b8qdp0xsd668m" path="res://Scripts/control.gd" id="1_bk6x6"]
+[ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://mask_1.png" id="2_s7d24"]
+[ext_resource type="Texture2D" uid="uid://c2mw64wt13cg5" path="res://mask_2.png" id="3_48tl7"]
+[ext_resource type="Texture2D" uid="uid://btux1nqlps8ta" path="res://mask_3.png" id="4_xolgq"]
+[ext_resource type="Texture2D" uid="uid://x1lv65rqe5cw" path="res://ghj_redmask.png" id="5_h26lp"]
+[ext_resource type="Texture2D" uid="uid://ds8bah2xtqnyw" path="res://ggj_yellowmask.png" id="6_on153"]
+[ext_resource type="Texture2D" uid="uid://bt8lqny4yer2a" path="res://ggj_bluemask.png" id="7_s1orw"]
+[ext_resource type="Texture2D" uid="uid://qou3h848sfsh" path="res://ggj_blackmask.png" id="8_jkf1p"]
+
+[node name="Timer" type="Control" unique_id=642478930]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 421.0
+offset_top = -1.0
+offset_right = 421.0
+offset_bottom = -1.0
+
+[node name="Label" type="Label" parent="." unique_id=1107265930]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -413.0
+offset_top = -3.0
+offset_right = -244.0
+offset_bottom = 88.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 66
+text = "00:00"
+
+[node name="Timer" type="Timer" parent="." unique_id=741717114]
+wait_time = 90.0
+autostart = true
+
+[node name="Control" type="Control" parent="." unique_id=632551454]
+anchors_preset = 0
+offset_left = -3.0
+offset_right = 37.0
+offset_bottom = 40.0
+script = ExtResource("1_bk6x6")
+mask_textures = Array[Texture2D]([ExtResource("2_s7d24"), ExtResource("3_48tl7"), ExtResource("4_xolgq"), ExtResource("5_h26lp"), ExtResource("6_on153"), ExtResource("7_s1orw"), ExtResource("8_jkf1p")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1709935878]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 10.0
+offset_right = 408.0
+offset_bottom = 97.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer" unique_id=1476208800]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Find this mask"
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer" unique_id=1683986138]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+expand_mode = 2
+stretch_mode = 5

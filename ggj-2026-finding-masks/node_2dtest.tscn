@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dsesum3l835rd"]
+[gd_scene format=3 uid="uid://0uiu3a6hlels"]
 
-[ext_resource type="Script" uid="uid://bl734leisfmut" path="res://score_level_tracker.gd" id="1_oexl5"]
+[ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="1_oexl5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oexl5"]
 font_size = 36

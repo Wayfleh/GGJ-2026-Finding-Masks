@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="GGJ 2026 Finding Masks"
-run/main_scene="res://timer.tscn"
-config/features=PackedStringArray("4.6", "Forward Plus")
+run/main_scene="res://Scenes/timer.tscn"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]

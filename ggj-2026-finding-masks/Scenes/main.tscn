@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bl5q1idmpa88c"]
 
 [ext_resource type="Script" uid="uid://i4vd5r4pypf6" path="res://Scripts/main.gd" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://t0j2jdb566ee" path="res://Scenes/timer.tscn" id="2_bo1nx"]
 
 [node name="main" type="Node2D" unique_id=153155866]
 script = ExtResource("1_jjgbg")
+
+[node name="Timer" parent="." unique_id=642478930 instance=ExtResource("2_bo1nx")]
