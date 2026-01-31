@@ -3,13 +3,12 @@ extends Control
 @onready var label = $Label
 @onready var timer = $Timer
 
-@onready var prompt_label: Label = $Control/VBoxContainer/Label
-@onready var target_image: TextureRect = $Control/VBoxContainer/TextureRect
+@onready var target_image: TextureRect = $TextureRect
 @onready var main: Main = owner
+
 func _ready() -> void:
-	prompt_label.text = "Find this mask"
 	target_image.texture = main.mask_sprites[main.target_index]
-	timer.start()
+	timer.start(90)
 
 func time_left_to_live():
 	var time_left = timer.time_left

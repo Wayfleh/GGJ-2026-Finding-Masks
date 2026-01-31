@@ -1,4 +1,4 @@
-class_name MaskArea extends Node2D
+class_name MaskArea extends Control
 
 
 var mask_cache : Array[Mask] = []
@@ -37,8 +37,8 @@ func _make_mask(index: int) -> Mask:
 	mask.mouse_entered.connect(mouse_enters_mask.bind(mask))
 	mask.mouse_exited.connect(mouse_exits_mask.bind(mask))
 	mask.sprite.texture = main.mask_sprites[index]
-	mask.global_position.x = randi_range(80, 1840)
-	mask.global_position.y = randi_range(80, 1000)
+	mask.global_position.x = randi_range(278 + 90, 1364 - 90)
+	mask.global_position.y = randi_range(312 + 90, 990)
 	return mask
 	
 func mouse_enters_mask(mask: Mask) -> void:
