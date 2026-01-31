@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2mw64wt13cg5"
-path="res://.godot/imported/mask_2.png-6bc68b301aa9e867680f32f30fc16ca7.ctex"
+uid="uid://x1lv65rqe5cw"
+path="res://.godot/imported/ghj_redmask.png-6008b680a266bf1ad6d52db8c401d5e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mask_2.png"
-dest_files=["res://.godot/imported/mask_2.png-6bc68b301aa9e867680f32f30fc16ca7.ctex"]
+source_file="res://Art/ghj_redmask.png"
+dest_files=["res://.godot/imported/ghj_redmask.png-6008b680a266bf1ad6d52db8c401d5e3.ctex"]
 
 [params]
 

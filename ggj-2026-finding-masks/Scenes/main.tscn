@@ -1,9 +1,21 @@
 [gd_scene format=3 uid="uid://bl5q1idmpa88c"]
 
-[ext_resource type="Script" uid="uid://i4vd5r4pypf6" path="res://Scripts/main.gd" id="1_jjgbg"]
+[ext_resource type="Script" uid="uid://md63vvvnecqf" path="res://main.gd" id="1_8gbba"]
+[ext_resource type="Script" uid="uid://i4vd5r4pypf6" path="res://Scripts/mask_area.gd" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://t0j2jdb566ee" path="res://Scenes/timer.tscn" id="2_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://qou3h848sfsh" path="res://Art/ggj_blackmask.png" id="2_hptm8"]
+[ext_resource type="Texture2D" uid="uid://bt8lqny4yer2a" path="res://Art/ggj_bluemask.png" id="3_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://ds8bah2xtqnyw" path="res://Art/ggj_yellowmask.png" id="4_6iyac"]
+[ext_resource type="Texture2D" uid="uid://x1lv65rqe5cw" path="res://Art/ghj_redmask.png" id="5_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://Art/mask_1.png" id="6_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://c2mw64wt13cg5" path="res://Art/mask_2.png" id="7_wsu2k"]
+[ext_resource type="Texture2D" uid="uid://btux1nqlps8ta" path="res://Art/mask_3.png" id="8_k12tt"]
 
 [node name="main" type="Node2D" unique_id=153155866]
-script = ExtResource("1_jjgbg")
+script = ExtResource("1_8gbba")
+mask_sprites = Array[Texture2D]([ExtResource("2_hptm8"), ExtResource("3_d1ilt"), ExtResource("4_6iyac"), ExtResource("5_fdnlq"), ExtResource("6_jkdf5"), ExtResource("7_wsu2k"), ExtResource("8_k12tt")])
 
 [node name="Timer" parent="." unique_id=642478930 instance=ExtResource("2_bo1nx")]
+
+[node name="MaskArea" type="Node2D" parent="." unique_id=460871865]
+script = ExtResource("1_jjgbg")
