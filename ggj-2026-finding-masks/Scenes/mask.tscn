@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bfnad16ybaedh"]
+
+[ext_resource type="Script" uid="uid://ceoeckcvsmqwm" path="res://Scenes/mask.gd" id="1_daowh"]
+[ext_resource type="Texture2D" uid="uid://dvaj6ogtfd2s8" path="res://Art/PlaceHolder/american-cockroach.webp" id="2_lm7dy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i8ixn"]
+radius = 50.0
+
+[node name="Mask" type="Area2D" unique_id=1748383302]
+script = ExtResource("1_daowh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1039242960]
+shape = SubResource("CircleShape2D_i8ixn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=111664582]
+scale = Vector2(0.3416442, 0.32991913)
+texture = ExtResource("2_lm7dy")
