@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cekj3fjp3ck"]
+
+[ext_resource type="Script" uid="uid://dtto3ogvr7wri" path="res://title_screen.gd" id="1_fnlyl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
+font_size = 64
+
+[node name="TitleScreen" type="Control" unique_id=1801077869]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fnlyl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=811457834]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -85.0
+offset_top = -103.0
+offset_right = 85.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1980788146]
+layout_mode = 2
+text = "Start"
+
+[node name="MaskFinder Title" type="Label" parent="." unique_id=868534083]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -269.5
+offset_top = -115.0
+offset_right = 269.5
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Mask Finder"
+label_settings = SubResource("LabelSettings_fnlyl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
