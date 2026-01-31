@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cekj3fjp3ck"]
 
 [ext_resource type="Script" uid="uid://dtto3ogvr7wri" path="res://Scripts/title_screen.gd" id="1_fnlyl"]
+[ext_resource type="Texture2D" uid="uid://bpmfxvnc7t4px" path="res://Art/MenuButtons/Button_Play.png" id="2_n15yj"]
+[ext_resource type="Texture2D" uid="uid://3fdes21lrwce" path="res://Art/MenuButtons/Button_Credits.png" id="3_emot1"]
+[ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="4_i5sur"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
 font_size = 64
@@ -21,15 +24,33 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -85.0
-offset_top = -103.0
-offset_right = 85.0
+offset_left = -198.0
+offset_top = -650.0
+offset_right = 245.0
+offset_bottom = -65.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1980788146]
 layout_mode = 2
-text = "Start"
+size_flags_vertical = 3
+icon = ExtResource("2_n15yj")
+flat = true
+expand_icon = true
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer" unique_id=1497522484]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("3_emot1")
+flat = true
+expand_icon = true
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=151559603]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("4_i5sur")
+flat = true
+expand_icon = true
 
 [node name="MaskFinder Title" type="Label" parent="." unique_id=868534083]
 layout_mode = 1
@@ -38,10 +59,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -269.5
-offset_top = -115.0
-offset_right = 269.5
-offset_bottom = 115.0
+offset_left = -242.0
+offset_top = -441.0
+offset_right = 297.0
+offset_bottom = -211.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Mask Finder"
@@ -50,3 +71,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

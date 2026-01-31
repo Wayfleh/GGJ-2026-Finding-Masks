@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dglwo114d6q53"]
+
+[ext_resource type="Script" uid="uid://b754ocf76fe7w" path="res://Scripts/credits.gd" id="1_i8h6y"]
+[ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_xbebw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xbebw"]
+font_size = 64
+
+[node name="Credits" type="Control" unique_id=1647245879]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i8h6y")
+
+[node name="TitleScreenButton" type="Button" parent="." unique_id=1915870914]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -281.5
+offset_top = -245.0
+offset_right = 281.5
+grow_horizontal = 2
+grow_vertical = 0
+icon = ExtResource("2_xbebw")
+flat = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="." unique_id=2096474513]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -901.0
+offset_top = -445.0
+offset_right = 901.0
+offset_bottom = 380.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Rafael
+Cristal
+Alan
+Katheryn
+Leilani"
+label_settings = SubResource("LabelSettings_xbebw")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="TitleScreenButton" to="." method="_on_title_screen_button_pressed"]

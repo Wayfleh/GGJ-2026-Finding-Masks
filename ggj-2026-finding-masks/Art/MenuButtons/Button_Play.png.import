@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cec887j4ev82j"
-path="res://.godot/imported/mask_1.png-e162853bc828a6d8f210e89f169f6a6a.ctex"
+uid="uid://bpmfxvnc7t4px"
+path="res://.godot/imported/Button_Play.png-aff84ab20808503ec8a250a2696567f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mask_1.png"
-dest_files=["res://.godot/imported/mask_1.png-e162853bc828a6d8f210e89f169f6a6a.ctex"]
+source_file="res://Art/MenuButtons/Button_Play.png"
+dest_files=["res://.godot/imported/Button_Play.png-aff84ab20808503ec8a250a2696567f3.ctex"]
 
 [params]
 

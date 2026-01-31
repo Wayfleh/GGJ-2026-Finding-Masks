@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qou3h848sfsh"
-path="res://.godot/imported/ggj_blackmask.png-095d32e74dbd5a93dae4a6a089b37b57.ctex"
+uid="uid://buwaebagkmwy6"
+path="res://.godot/imported/Button_Retry.png-e7ef430a0738695d89757f3b426b9974.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ggj_blackmask.png"
-dest_files=["res://.godot/imported/ggj_blackmask.png-095d32e74dbd5a93dae4a6a089b37b57.ctex"]
+source_file="res://Art/MenuButtons/Button_Retry.png"
+dest_files=["res://.godot/imported/Button_Retry.png-e7ef430a0738695d89757f3b426b9974.ctex"]
 
 [params]
 
