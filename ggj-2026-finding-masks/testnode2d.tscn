@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://kcekaauaiths"]
+
+[ext_resource type="Script" uid="uid://bl734leisfmut" path="res://score_level_tracker.gd" id="1_gusjd"]
+
+[node name="Node2D" type="Node2D" unique_id=1552786259]
+
+[node name="Label" type="Label" parent="." unique_id=1907097058]
+offset_right = 273.0
+offset_bottom = 122.0
+script = ExtResource("1_gusjd")
