@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://t0j2jdb566ee"]
 
 [ext_resource type="Script" uid="uid://b8qdp0xsd668m" path="res://Scripts/control.gd" id="1_bk6x6"]
+[ext_resource type="Script" uid="uid://cc8cteo8bkbwv" path="res://Scenes/timer.gd" id="1_s7d24"]
 [ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://mask_1.png" id="2_s7d24"]
 [ext_resource type="Texture2D" uid="uid://c2mw64wt13cg5" path="res://mask_2.png" id="3_48tl7"]
 [ext_resource type="Texture2D" uid="uid://btux1nqlps8ta" path="res://mask_3.png" id="4_xolgq"]
@@ -16,6 +17,7 @@ offset_left = 421.0
 offset_top = -1.0
 offset_right = 421.0
 offset_bottom = -1.0
+script = ExtResource("1_s7d24")
 
 [node name="Label" type="Label" parent="." unique_id=1107265930]
 layout_mode = 1

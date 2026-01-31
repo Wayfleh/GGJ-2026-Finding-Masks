@@ -8,8 +8,7 @@ var mask_sprites: Array[CompressedTexture2D] = [
 var mask_cache : Array[Mask] = []
 
 func _ready() -> void:
-	#mask_manager(10, 1)
-	pass
+	mask_manager(10, 1)
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if event is not InputEventMouseButton:
