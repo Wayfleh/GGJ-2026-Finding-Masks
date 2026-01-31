@@ -6,7 +6,7 @@ class_name Mask extends Area2D
 static var mask_scene = preload("res://Scenes/mask.tscn")
 
 
-#Creates a new mask
+#Creates a new mask and returns it with its index
 static func spawn(index: int) -> Mask:
 	var new = mask_scene.instantiate()
 	new.mask_index = index
