@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://t0j2jdb566ee"]
 
 [ext_resource type="Script" uid="uid://bygp7elvc6nd1" path="res://node_2d.gd" id="1_qdhxh"]
+[ext_resource type="Script" uid="uid://b8qdp0xsd668m" path="res://control.gd" id="2_ye2uk"]
 
-[node name="Timer" type="Node2D" unique_id=230153529]
+[node name="Nodes" type="Node2D" unique_id=230153529]
 position = Vector2(421, -1)
 script = ExtResource("1_qdhxh")
 
@@ -20,3 +21,24 @@ text = "00:00"
 [node name="Timer" type="Timer" parent="." unique_id=741717114]
 wait_time = 90.0
 autostart = true
+
+[node name="Control" type="Control" parent="." unique_id=632551454]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ye2uk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1709935878]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Control/VBoxContainer" unique_id=1476208800]
+layout_mode = 2
+text = "Find this mask"
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer" unique_id=1683986138]
+layout_mode = 2
+stretch_mode = 5
