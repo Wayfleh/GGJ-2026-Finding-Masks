@@ -7,6 +7,7 @@ extends Control
 @onready var main: GameMain = owner
 
 @export var time: int = 120
+signal time_up
 
 #Grabs the target image from the main node's mask_sprites array
 #using its target index
@@ -36,3 +37,7 @@ func apply_time_delta(seconds: int) -> void:
 func update_target_image() ->void:
 		target_image.texture = main.mask_sprites[main.target_index]
 	
+
+
+func _on_timer_timeout() -> void:
+	time_up.emit()
