@@ -13,7 +13,8 @@ var target_index: int = randi_range(0, 6)
 func _ready() -> void:
 	mask_area.time_delta.connect(game_timer.apply_time_delta)
 	mask_area.round_won.connect(_on_round_won)
-	
+	game_timer.time_up.connect(_on_time_up)
+
 func _on_round_won() -> void:
 	var old := target_index
 	while target_index == old:
@@ -22,4 +23,10 @@ func _on_round_won() -> void:
 		game_timer.update_target_image()
 		
 		mask_area.reset_round()
-	
+
+func _on_time_up() -> void:
+	mask_area.set_process(false)
+	game_timer.set_process(false)
+	game_timer.timer.stop()
+	get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
+	game_timer.stop_timer()
