@@ -53,5 +53,7 @@ theme_override_font_sizes/font_size = 60
 text = "Find this mask"
 
 [node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer" unique_id=1683986138]
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 2
+expand_mode = 2
 stretch_mode = 5
