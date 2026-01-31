@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="GGJ 2026 Finding Masks"
+<<<<<<< Updated upstream
 run/main_scene="uid://cekj3fjp3ck"
+=======
+run/main_scene="uid://birdxc4es1r3q"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
