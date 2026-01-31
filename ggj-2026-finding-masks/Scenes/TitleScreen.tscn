@@ -21,15 +21,27 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -85.0
-offset_top = -103.0
-offset_right = 85.0
+offset_left = -198.0
+offset_top = -219.0
+offset_right = 195.0
+offset_bottom = -65.0
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1980788146]
 layout_mode = 2
+size_flags_vertical = 3
 text = "Start"
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer" unique_id=1497522484]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=151559603]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
 
 [node name="MaskFinder Title" type="Label" parent="." unique_id=868534083]
 layout_mode = 1
@@ -50,3 +62,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
