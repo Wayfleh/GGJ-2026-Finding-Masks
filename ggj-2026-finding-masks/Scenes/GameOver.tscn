@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://c1oill3e3283v"]
+[gd_scene format=3 uid="uid://cdurxocmg6b5k"]
 
-[ext_resource type="Script" uid="uid://dw5budm2aonfi" path="res://Scripts/game_over.gd" id="1_m5628"]
+[ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_m5628"]
 [ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_ktc4i"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="3_uib17"]
 
@@ -12,6 +12,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -255.0
+offset_top = -255.0
+offset_right = -255.0
+offset_bottom = -255.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_m5628")
