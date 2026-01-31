@@ -1,4 +1,4 @@
-class_name Main extends Node
+class_name GameMain extends Node
 
 #Every node that gets sprites gets it from Main
 #so that target mask matches from each node
