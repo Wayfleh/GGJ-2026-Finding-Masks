@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://c1oill3e3283v"]
 
 [ext_resource type="Script" uid="uid://dw5budm2aonfi" path="res://Scripts/game_over.gd" id="1_m5628"]
+[ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_ktc4i"]
+[ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="3_uib17"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 64
@@ -39,22 +41,25 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -184.5
-offset_top = -147.0
-offset_right = 184.5
-offset_bottom = -52.0
+offset_left = -220.5
+offset_top = -377.0
+offset_right = 220.5
 grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Title Screen" type="Button" parent="VBoxContainer" unique_id=887750059]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Title Screen"
+icon = ExtResource("2_ktc4i")
+flat = true
+expand_icon = true
 
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=487416155]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Quit"
+icon = ExtResource("3_uib17")
+flat = true
+expand_icon = true
 
 [connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

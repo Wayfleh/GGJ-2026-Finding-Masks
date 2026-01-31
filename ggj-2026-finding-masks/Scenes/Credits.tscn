@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dglwo114d6q53"]
 
 [ext_resource type="Script" uid="uid://b754ocf76fe7w" path="res://Scripts/credits.gd" id="1_i8h6y"]
+[ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_xbebw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xbebw"]
 font_size = 64
@@ -21,13 +22,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -139.0
-offset_top = -113.0
-offset_right = 139.0
-offset_bottom = -35.0
+offset_left = -281.5
+offset_top = -245.0
+offset_right = 281.5
 grow_horizontal = 2
 grow_vertical = 0
-text = "Title Screen"
+icon = ExtResource("2_xbebw")
+flat = true
+expand_icon = true
 
 [node name="Label" type="Label" parent="." unique_id=2096474513]
 layout_mode = 1
