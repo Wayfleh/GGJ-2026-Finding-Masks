@@ -6,7 +6,7 @@ extends Control
 @onready var target_image: TextureRect = $TextureRect
 @onready var main: GameMain = owner
 
-@export var time: int 
+@export var time: int = 120
 
 #Grabs the target image from the main node's mask_sprites array
 #using its target index
@@ -24,3 +24,15 @@ func time_left_to_live() -> Array[int]:
 #update timer
 func _process(delta):
 	label.text = "%02d:%02d"% time_left_to_live()
+
+func apply_time_delta(seconds: int) -> void:
+	var new_time_left : float = timer.time_left + float(seconds)
+	
+	new_time_left = max(0.0, new_time_left)
+	
+	timer.stop()
+	timer.start(new_time_left)
+	
+func update_target_image() ->void:
+		target_image.texture = main.mask_sprites[main.target_index]
+	
