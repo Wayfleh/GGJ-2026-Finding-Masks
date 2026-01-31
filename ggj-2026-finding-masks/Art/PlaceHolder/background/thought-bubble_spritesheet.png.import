@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qou3h848sfsh"
-path="res://.godot/imported/ggj_blackmask.png-095d32e74dbd5a93dae4a6a089b37b57.ctex"
+uid="uid://bdqccrc13wbsc"
+path="res://.godot/imported/thought-bubble_spritesheet.png-8c76804684659f796d5c07c26fd60291.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ggj_blackmask.png"
-dest_files=["res://.godot/imported/ggj_blackmask.png-095d32e74dbd5a93dae4a6a089b37b57.ctex"]
+source_file="res://Art/PlaceHolder/background/thought-bubble_spritesheet.png"
+dest_files=["res://.godot/imported/thought-bubble_spritesheet.png-8c76804684659f796d5c07c26fd60291.ctex"]
 
 [params]
 

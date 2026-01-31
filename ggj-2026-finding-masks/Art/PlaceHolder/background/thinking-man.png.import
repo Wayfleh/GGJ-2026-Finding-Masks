@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x1lv65rqe5cw"
-path="res://.godot/imported/ghj_redmask.png-e37886b1640872787a8c6b54aea2aeef.ctex"
+uid="uid://butk7xlnose2d"
+path="res://.godot/imported/thinking-man.png-9cf78065bb31390ab0e5acee4a5e6a99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ghj_redmask.png"
-dest_files=["res://.godot/imported/ghj_redmask.png-e37886b1640872787a8c6b54aea2aeef.ctex"]
+source_file="res://Art/PlaceHolder/background/thinking-man.png"
+dest_files=["res://.godot/imported/thinking-man.png-9cf78065bb31390ab0e5acee4a5e6a99.ctex"]
 
 [params]
 

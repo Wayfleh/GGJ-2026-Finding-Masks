@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://b04nq35g8mwac"]
+
+[ext_resource type="Script" uid="uid://d1v3ul2rrxyp6" path="res://Scripts/timer.gd" id="1_ete55"]
+[ext_resource type="Texture2D" uid="uid://butk7xlnose2d" path="res://Art/PlaceHolder/background/thinking-man.png" id="2_ete55"]
+[ext_resource type="Texture2D" uid="uid://bdqccrc13wbsc" path="res://Art/PlaceHolder/background/thought-bubble_spritesheet.png" id="3_d5v1n"]
+[ext_resource type="Texture2D" uid="uid://d3pwpni7klrkc" path="res://Art/PlaceHolder/mask_1.png" id="4_d5v1n"]
+
+[sub_resource type="Animation" id="Animation_qrbj0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThoughtBubble:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_ul4l5"]
+resource_name = "thought bubble loop"
+length = 0.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThoughtBubble:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nts73"]
+_data = {
+&"RESET": SubResource("Animation_qrbj0"),
+&"thought bubble loop": SubResource("Animation_ul4l5")
+}
+
+[node name="TimerArea" type="Control" unique_id=1383649617]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 278.0
+offset_top = 2.0
+offset_right = 1639.0
+offset_bottom = 312.0
+script = ExtResource("1_ete55")
+
+[node name="TheThinker" type="Sprite2D" parent="." unique_id=741169240]
+position = Vector2(340, 177)
+texture = ExtResource("2_ete55")
+
+[node name="ThoughtBubble" type="Sprite2D" parent="." unique_id=1797309693]
+position = Vector2(637, 163)
+texture = ExtResource("3_d5v1n")
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ThoughtBubble" unique_id=534607813]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_nts73")
+autoplay = &"thought bubble loop"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=54981807]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 42.0
+offset_right = 813.0
+offset_bottom = 285.0
+texture = ExtResource("4_d5v1n")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Timer" type="Timer" parent="." unique_id=879249046]
+
+[node name="Label" type="Label" parent="." unique_id=2284020]
+layout_mode = 0
+offset_left = 971.0
+offset_top = 97.0
+offset_right = 1140.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 66
+text = "00:00"
