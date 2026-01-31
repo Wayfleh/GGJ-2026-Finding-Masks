@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene format=3 uid="uid://0uiu3a6hlels"]
-
-[node name="Node2D" type="Node2D" unique_id=1450669133]
-=======
-[gd_scene format=3 uid="uid://birdxc4es1r3q"]
+[gd_scene format=3 uid="uid://dsesum3l835rd"]
 
 [ext_resource type="Script" uid="uid://bl734leisfmut" path="res://score_level_tracker.gd" id="1_oexl5"]
 
@@ -24,4 +19,3 @@ vertical_alignment = 1
 text_overrun_behavior = 1
 uppercase = true
 script = ExtResource("1_oexl5")
->>>>>>> Stashed changes
