@@ -8,8 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	score = score + delta
-	self.text = str(score)
+	pass
 
 func incrementAndUpdateScore() -> void:
 	score = score + 1
