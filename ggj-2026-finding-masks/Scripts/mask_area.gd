@@ -3,7 +3,7 @@ class_name MaskArea extends Control
 var mask_cache : Array[Mask] = []
 @onready var target_mask : Mask = null
 @onready var found_target : bool = false
-@onready var main: Main = owner
+@onready var main: GameMain = owner
 
 signal level_complete
 

@@ -4,7 +4,7 @@ extends Control
 @onready var timer = $Timer
 
 @onready var target_image: TextureRect = $TextureRect
-@onready var main: Main = owner
+@onready var main: GameMain = owner
 
 @export var time: int 
 
