@@ -33,3 +33,6 @@ func apply_time_delta(seconds: int) -> void:
 	timer.stop()
 	timer.start(new_time_left)
 	
+func update_target_image() ->void:
+		target_image.texture = main.mask_sprites[main.target_index]
+	

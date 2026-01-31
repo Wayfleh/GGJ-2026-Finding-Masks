@@ -8,6 +8,7 @@ var time_dec : int = -15
 @onready var main: GameMain = owner
 
 signal level_complete
+signal round_won
 signal time_delta(seconds: int)
 
 func _ready() -> void:
@@ -23,13 +24,12 @@ func _process(delta: float) -> void:
 		
 		if clicked_mask == target_mask:
 			print("target found!!!")
-			found_target = true
-			
 			time_delta.emit(time_inc)
-			level_complete.emit()
+			round_won.emit()
 		else:
 			print("wrong mask!")
 			time_delta.emit(time_dec)
+			
 			#TODO - connect this signal to a new function here or in Main
 			#that switches the active scene to the end scene
 			#then later we can have it change levels or something
@@ -77,3 +77,19 @@ func mouse_enters_mask(mask: Mask) -> void:
 #leaving the mask's collider removes it from the cache
 func mouse_exits_mask(mask: Mask) -> void:
 	mask_cache.erase(mask)
+
+#sets the clear mask to true clears the masks off screen and then sets mask target back to false for next round
+func reset_round() -> void:
+	found_target = true
+	clear_masks()
+	await get_tree().process_frame
+	found_target = false
+	mask_manager(10,1)
+	
+#helper function for reset_round that clears all masks in screen
+func clear_masks() -> void:
+	mask_cache.clear()
+	
+	for child in get_children():
+		if child is Mask:
+			child.queue_free()
