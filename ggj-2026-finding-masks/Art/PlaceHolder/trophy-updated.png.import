@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgvsf2po2eoe0"
-path="res://.godot/imported/trophy_placeholder.png-5a520312ea2b8e66520f615ddf4eba57.ctex"
+uid="uid://bbogmrl4uluhi"
+path="res://.godot/imported/trophy-updated.png-e22148904218317f0d429351b2936b8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/PlaceHolder/trophy_placeholder.png"
-dest_files=["res://.godot/imported/trophy_placeholder.png-5a520312ea2b8e66520f615ddf4eba57.ctex"]
+source_file="res://Art/PlaceHolder/trophy-updated.png"
+dest_files=["res://.godot/imported/trophy-updated.png-e22148904218317f0d429351b2936b8d.ctex"]
 
 [params]
 
