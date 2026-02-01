@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dxynyg61kbrjf" path="res://Art/PlaceHolder/background/ggjbackground_placeholder.png" id="9_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://cq8gxvqkes0i8" path="res://Art/Masks/mask_8.png" id="9_hibaj"]
 [ext_resource type="Texture2D" uid="uid://cdy12nxl8irbs" path="res://Art/backgrounds/ggjbackground_theater2.png" id="10_jkdf5"]
+[ext_resource type="AudioStream" uid="uid://cg4v7opineq3v" path="res://sounds/old-zildjian-gong-quite-natural-34294.mp3" id="10_wsu2k"]
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 [ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
 
@@ -29,6 +30,10 @@ grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_8gbba")
 mask_sprites = Array[Texture2D]([ExtResource("2_fdnlq"), ExtResource("3_jkdf5"), ExtResource("4_wsu2k"), ExtResource("5_k12tt"), ExtResource("6_h1bgf"), ExtResource("7_b3802"), ExtResource("8_fevyy"), ExtResource("9_hibaj")])
+
+[node name="StartSfx" type="AudioStreamPlayer" parent="." unique_id=2095566873]
+stream = ExtResource("10_wsu2k")
+autoplay = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1232712032]
 z_index = -3
