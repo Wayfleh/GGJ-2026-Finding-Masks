@@ -180,8 +180,12 @@ icon = ExtResource("3_uib17")
 flat = true
 expand_icon = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1885194675]
+[node name="LossJingle" type="AudioStreamPlayer" parent="." unique_id=1885194675]
 stream = ExtResource("2_8710x")
+volume_db = -15.0
+autoplay = true
+
+[node name="Booing" type="AudioStreamPlayer" parent="." unique_id=582511933]
 autoplay = true
 
 [node name="Trophy" type="Sprite2D" parent="." unique_id=196807836]

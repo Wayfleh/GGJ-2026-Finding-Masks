@@ -24,6 +24,7 @@ script = ExtResource("1_fnlyl")
 
 [node name="TitleBGM" type="AudioStreamPlayer" parent="." unique_id=634666980]
 stream = ExtResource("2_7whhf")
+volume_db = -22.0
 autoplay = true
 
 [node name="TitleUI" type="Control" parent="." unique_id=1368666004]
