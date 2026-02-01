@@ -17,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i8h6y")
 
-[node name="TitleScreenButton" type="Button" parent="." unique_id=1915870914]
+[node name="BackButton" type="Button" parent="." unique_id=1915870914]
 z_index = 4
 layout_mode = 1
 anchors_preset = 7
@@ -67,5 +67,3 @@ offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
 texture = ExtResource("4_uy3b0")
-
-[connection signal="pressed" from="TitleScreenButton" to="." method="_on_title_screen_button_pressed"]
