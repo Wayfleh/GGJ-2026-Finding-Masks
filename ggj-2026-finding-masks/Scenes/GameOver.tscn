@@ -1,8 +1,10 @@
-[gd_scene format=3 uid="uid://cdurxocmg6b5k"]
+[gd_scene format=3 uid="uid://cv66uwn0fsgje"]
 
 [ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_m5628"]
 [ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_ktc4i"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="3_uib17"]
+[ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="4_rdiyk"]
+[ext_resource type="Script" uid="uid://d0hyig544v2mt" path="res://Scripts/Score_GameOver.gd" id="5_rdiyk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 64
@@ -64,6 +66,18 @@ size_flags_vertical = 3
 icon = ExtResource("3_uib17")
 flat = true
 expand_icon = true
+
+[node name="Score" type="Label" parent="." unique_id=2125990004]
+layout_mode = 0
+offset_left = 839.0
+offset_top = 554.0
+offset_right = 1088.0
+offset_bottom = 672.0
+text = "99"
+label_settings = ExtResource("4_rdiyk")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_rdiyk")
 
 [connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
