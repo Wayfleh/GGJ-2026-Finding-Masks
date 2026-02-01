@@ -25,12 +25,12 @@ script = ExtResource("1_fnlyl")
 
 [node name="TitleBGM" type="AudioStreamPlayer" parent="." unique_id=634666980]
 stream = ExtResource("2_7whhf")
-volume_db = -22.0
+volume_db = -14.0
 autoplay = true
 
 [node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1901690141]
 stream = ExtResource("3_qfyqv")
-volume_db = -21.0
+volume_db = -14.0
 
 [node name="TitleUI" type="Control" parent="." unique_id=1368666004]
 anchors_preset = 0

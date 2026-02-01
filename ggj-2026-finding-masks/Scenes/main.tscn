@@ -75,11 +75,11 @@ script = ExtResource("1_jjgbg")
 
 [node name="WrongSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=225063901]
 stream = ExtResource("18_fevyy")
-volume_db = -12.0
+volume_db = -8.0
 
 [node name="CorrectSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=1945087977]
 stream = ExtResource("17_b3802")
-volume_db = -7.0
+volume_db = -3.0
 
 [node name="backgroundborder" type="TextureRect" parent="." unique_id=68554480]
 layout_mode = 1
@@ -147,5 +147,5 @@ texture = ExtResource("15_k12tt")
 
 [node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1967930388]
 stream = ExtResource("16_k12tt")
-volume_db = -24.0
+volume_db = -16.0
 autoplay = true
