@@ -114,7 +114,4 @@ func CenterControlNodeOnMouse(object: Control):
 	var mousePos: Vector2 = get_local_mouse_position()
 	object.global_position.x = mousePos.x - (object.size.x / 2)
 	object.global_position.y = mousePos.y - (object.size.y / 2)
-	print("label position: " + str(object.global_position))
-	print("mousePos: " + str(mousePos))
-	print("object.size: " + str(object.size))
 	pass

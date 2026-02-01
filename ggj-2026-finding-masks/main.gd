@@ -9,6 +9,7 @@ var target_index: int = randi_range(0, 6)
 
 @onready var mask_area: MaskArea = $MaskArea
 @onready var game_timer = $TimerArea
+@onready var scoreCounter: Label = $ScoreCounter
 
 func _ready() -> void:
 	mask_area.time_delta.connect(game_timer.apply_time_delta)
@@ -16,13 +17,15 @@ func _ready() -> void:
 	game_timer.time_up.connect(_on_time_up)
 
 func _on_round_won() -> void:
-	var old := target_index
+	var old : = target_index
 	while target_index == old:
 		target_index = randi_range(0,6)
 		
 		game_timer.update_target_image()
 		
 		mask_area.reset_round()
+		
+		scoreCounter.incrementAndUpdateScore()
 
 func _on_time_up() -> void:
 	mask_area.set_process(false)
