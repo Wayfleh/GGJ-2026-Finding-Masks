@@ -12,6 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://dxynyg61kbrjf" path="res://Art/PlaceHolder/background/ggjbackground_placeholder.png" id="9_d1ilt"]
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 [ext_resource type="Texture2D" uid="uid://cdy12nxl8irbs" path="res://Art/backgrounds/ggjbackground_theater2.png" id="12_6iyac"]
+[ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdnlq"]
+font_size = 64
+font_color = Color(0.95686275, 0.9098039, 0.17254902, 1)
 
 [node name="main" type="Control" unique_id=2082938059]
 layout_mode = 3
@@ -60,3 +65,15 @@ offset_bottom = 310.0
 grow_horizontal = 2
 mouse_filter = 1
 time = 90
+
+[node name="ScoreCounter" type="Label" parent="." unique_id=1993673624]
+layout_mode = 0
+offset_left = 1248.0
+offset_top = 203.0
+offset_right = 1420.0
+offset_bottom = 291.0
+text = "99"
+label_settings = SubResource("LabelSettings_fdnlq")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12_6iyac")
