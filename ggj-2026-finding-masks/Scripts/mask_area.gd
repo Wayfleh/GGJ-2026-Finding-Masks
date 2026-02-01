@@ -7,6 +7,8 @@ var time_dec : int = -15
 @onready var found_target : bool = false
 @onready var main: GameMain = owner
 @onready var bgm: AudioStreamPlayer = $BGM
+@onready var correct_sfx: AudioStreamPlayer = $CorrectSFX
+@onready var wrong_sfx: AudioStreamPlayer = $WrongSFX
 
 
 
@@ -30,7 +32,7 @@ func _process(delta: float) -> void:
 		
 		if IsTargetMaskInMaskCache(target_mask, mask_cache):
 			print("target found!!!")
-			
+			correct_sfx.play() 
 			correct_clicked.emit()
 			time_delta.emit(time_inc)
 			var particle = clickCorrectTextParticle.instantiate()
@@ -44,6 +46,7 @@ func _process(delta: float) -> void:
 			CenterControlNodeOnMouse(particle)
 			add_child(particle)
 			print("wrong mask!")
+			wrong_sfx.play() 
 			wrong_clicked.emit() 
 			time_delta.emit(time_dec)
 			
