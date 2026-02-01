@@ -1,5 +1,10 @@
 [gd_resource type="LabelSettings" format=3 uid="uid://dufnjapb05iti"]
 
+[ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="1_hwcgs"]
+
 [resource]
-font_size = 64
-font_color = Color(0.95686275, 0.9098039, 0.17254902, 1)
+font = ExtResource("1_hwcgs")
+font_size = 82
+font_color = Color(0.78039217, 0.19607843, 0.12941177, 1)
+outline_size = 1
+outline_color = Color(0.22745098, 0.22745098, 0.105882354, 1)
