@@ -1,7 +1,7 @@
 class_name MaskArea extends Control
 
 var mask_cache : Array[Mask] = []
-var time_inc : int = 5
+var time_inc : int = 2
 var time_dec : int = -15
 @onready var target_mask : Mask = null
 @onready var found_target : bool = false
