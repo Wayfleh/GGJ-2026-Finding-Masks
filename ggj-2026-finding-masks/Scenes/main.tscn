@@ -75,7 +75,7 @@ script = ExtResource("1_jjgbg")
 
 [node name="WrongSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=225063901]
 stream = ExtResource("18_fevyy")
-volume_db = -14.0
+volume_db = -12.0
 
 [node name="CorrectSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=1945087977]
 stream = ExtResource("17_b3802")
