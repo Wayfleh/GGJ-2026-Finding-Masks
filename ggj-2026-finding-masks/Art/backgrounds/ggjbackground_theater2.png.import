@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btux1nqlps8ta"
-path="res://.godot/imported/mask_3.png-dd82b03f05cf56bf1691409ee15f2015.ctex"
+uid="uid://cdy12nxl8irbs"
+path="res://.godot/imported/ggjbackground_theater2.png-6407eb8ffca88c6be74e8ecb277acd1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/PlaceHolder/mask_3.png"
-dest_files=["res://.godot/imported/mask_3.png-dd82b03f05cf56bf1691409ee15f2015.ctex"]
+source_file="res://Art/Backgrounds/ggjbackground_theater2.png"
+dest_files=["res://.godot/imported/ggjbackground_theater2.png-6407eb8ffca88c6be74e8ecb277acd1b.ctex"]
 
 [params]
 
