@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qou3h848sfsh"
-path="res://.godot/imported/ggj_blackmask.png-db13922101b2e123f7cd415ef301182c.ctex"
+path="res://.godot/imported/ggj_blackmask.png-c339bbe6f55f661d706b27539e9703d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ggj_blackmask.png"
-dest_files=["res://.godot/imported/ggj_blackmask.png-db13922101b2e123f7cd415ef301182c.ctex"]
+source_file="res://Art/PlaceHolder/ggj_blackmask.png"
+dest_files=["res://.godot/imported/ggj_blackmask.png-c339bbe6f55f661d706b27539e9703d8.ctex"]
 
 [params]
 

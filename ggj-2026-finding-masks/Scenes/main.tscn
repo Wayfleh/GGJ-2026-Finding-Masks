@@ -2,14 +2,15 @@
 
 [ext_resource type="Script" uid="uid://md63vvvnecqf" path="res://main.gd" id="1_8gbba"]
 [ext_resource type="Script" uid="uid://i4vd5r4pypf6" path="res://Scripts/mask_area.gd" id="1_jjgbg"]
-[ext_resource type="Texture2D" uid="uid://qou3h848sfsh" path="res://Art/ggj_blackmask.png" id="2_hptm8"]
-[ext_resource type="Texture2D" uid="uid://bt8lqny4yer2a" path="res://Art/ggj_bluemask.png" id="3_d1ilt"]
-[ext_resource type="Texture2D" uid="uid://ds8bah2xtqnyw" path="res://Art/ggj_yellowmask.png" id="4_6iyac"]
-[ext_resource type="Texture2D" uid="uid://x1lv65rqe5cw" path="res://Art/ghj_redmask.png" id="5_fdnlq"]
-[ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://Art/mask_1.png" id="6_jkdf5"]
-[ext_resource type="Texture2D" uid="uid://c2mw64wt13cg5" path="res://Art/mask_2.png" id="7_wsu2k"]
-[ext_resource type="Texture2D" uid="uid://btux1nqlps8ta" path="res://Art/mask_3.png" id="8_k12tt"]
+[ext_resource type="Texture2D" uid="uid://bedkkmjso14m5" path="res://Art/Masks/mask_1.png" id="2_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://l4s5r56wxruc" path="res://Art/Masks/mask_2.png" id="3_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://bhaqqs07f6ht3" path="res://Art/Masks/mask_3.png" id="4_wsu2k"]
+[ext_resource type="Texture2D" uid="uid://d01msi14ukwfi" path="res://Art/Masks/mask_4.png" id="5_k12tt"]
+[ext_resource type="Texture2D" uid="uid://b1xkn4krc1sgb" path="res://Art/Masks/mask_5.png" id="6_h1bgf"]
+[ext_resource type="Texture2D" uid="uid://b5xyo8xaqt2bv" path="res://Art/Masks/mask_6.png" id="7_b3802"]
+[ext_resource type="Texture2D" uid="uid://dgyfuuafsp633" path="res://Art/Masks/mask_7.png" id="8_fevyy"]
 [ext_resource type="Texture2D" uid="uid://dxynyg61kbrjf" path="res://Art/PlaceHolder/background/ggjbackground_placeholder.png" id="9_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://cq8gxvqkes0i8" path="res://Art/Masks/mask_8.png" id="9_hibaj"]
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 
 [node name="main" type="Control" unique_id=2082938059]
@@ -21,9 +22,13 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_8gbba")
-mask_sprites = Array[Texture2D]([ExtResource("2_hptm8"), ExtResource("3_d1ilt"), ExtResource("4_6iyac"), ExtResource("5_fdnlq"), ExtResource("6_jkdf5"), ExtResource("7_wsu2k"), ExtResource("8_k12tt")])
+mask_sprites = Array[Texture2D]([ExtResource("2_fdnlq"), ExtResource("3_jkdf5"), ExtResource("4_wsu2k"), ExtResource("5_k12tt"), ExtResource("6_h1bgf"), ExtResource("7_b3802"), ExtResource("8_fevyy"), ExtResource("9_hibaj")])
+threshold = null
+max_level = null
+difficulty_factor = null
 
 [node name="MaskArea" type="TextureRect" parent="." unique_id=1902004965]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

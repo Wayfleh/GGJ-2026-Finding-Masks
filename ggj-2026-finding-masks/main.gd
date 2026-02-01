@@ -5,10 +5,16 @@ class_name GameMain extends Node
 #Currently that is timer.gd and mask_area.gd
 @export var mask_sprites: Array[Texture2D]
 
-var target_index: int = randi_range(0, 6)
+var target_index: int = randi_range(0, mask_sprites.size() - 1)
 
 @onready var mask_area: MaskArea = $MaskArea
 @onready var game_timer = $TimerArea
+
+@onready var level = 0
+@onready var curr_thresh = 0
+@export var max_threshold = 5
+@export var max_level = 10
+@export var difficulty_factor = 2
 
 func _ready() -> void:
 	mask_area.time_delta.connect(game_timer.apply_time_delta)
@@ -18,7 +24,13 @@ func _ready() -> void:
 func _on_round_won() -> void:
 	var old := target_index
 	while target_index == old:
-		target_index = randi_range(0,6)
+		target_index = randi_range(0, mask_sprites.size() - 1)
+	
+	curr_thresh += 1
+	if curr_thresh >= threshold and level < max_level:
+		level += 1
+		curr_thresh = 0
+		
 	
 	game_timer.update_target_image()
 	

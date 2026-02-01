@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bfnad16ybaedh"]
 
 [ext_resource type="Script" uid="uid://ceoeckcvsmqwm" path="res://Scripts/mask.gd" id="1_daowh"]
-[ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://Art/mask_1.png" id="2_daowh"]
+[ext_resource type="Texture2D" uid="uid://cec887j4ev82j" path="res://Art/PlaceHolder/mask_1.png" id="2_daowh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i8ixn"]
 radius = 90.0

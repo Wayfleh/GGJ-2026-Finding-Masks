@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btux1nqlps8ta"
-path="res://.godot/imported/mask_3.png-dd82b03f05cf56bf1691409ee15f2015.ctex"
+uid="uid://cq8gxvqkes0i8"
+path="res://.godot/imported/mask_8.png-010fc3b5e4ce69b4f853756ea3edd5f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/PlaceHolder/mask_3.png"
-dest_files=["res://.godot/imported/mask_3.png-dd82b03f05cf56bf1691409ee15f2015.ctex"]
+source_file="res://Art/Masks/mask_8.png"
+dest_files=["res://.godot/imported/mask_8.png-010fc3b5e4ce69b4f853756ea3edd5f3.ctex"]
 
 [params]
 

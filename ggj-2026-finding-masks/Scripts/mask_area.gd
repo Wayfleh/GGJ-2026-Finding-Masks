@@ -7,7 +7,6 @@ var time_dec : int = -15
 @onready var found_target : bool = false
 @onready var main: GameMain = owner
 
-signal level_complete
 signal round_won
 signal time_delta(seconds: int)
 
@@ -15,7 +14,7 @@ var clickCorrectTextParticle: PackedScene = preload("res://Scenes/ClickCorrectTe
 var clickWrongTextParticle: PackedScene = preload("res://Scenes/ClickWrongTextParticle.tscn")
 
 func _ready() -> void:
-	mask_manager(10, 1)
+	mask_manager(10)
 	
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("click"):
@@ -47,12 +46,12 @@ func _process(delta: float) -> void:
 	
 #this will spawn masks at random positions around the map
 #spawns n-1 random masks, then spawns the target mask separately
-func mask_manager(num: int, target_index: int) -> void:
+func mask_manager(num: int) -> void:
 	
 	for i in range(num -1):
 		var curr_index = main.target_index
 		while curr_index == main.target_index:
-			curr_index = randi_range(0, 6)
+			curr_index = randi_range(0, main.mask_sprites.size() - 1)
 		_make_mask(curr_index)
 	
 	#sets the target_mask variable while putting it on the screen
@@ -95,7 +94,7 @@ func reset_round() -> void:
 	clear_masks()
 	await get_tree().process_frame
 	found_target = false
-	mask_manager(10,1)
+	mask_manager(10 + (main.level * 2))
 	
 #helper function for reset_round that clears all masks in screen
 func clear_masks() -> void:
