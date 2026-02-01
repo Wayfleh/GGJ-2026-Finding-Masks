@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://butk7xlnose2d" path="res://Art/PlaceHolder/background/thinking-man.png" id="2_ete55"]
 [ext_resource type="Texture2D" uid="uid://bdqccrc13wbsc" path="res://Art/PlaceHolder/background/thought-bubble_spritesheet.png" id="3_d5v1n"]
 [ext_resource type="Texture2D" uid="uid://d3pwpni7klrkc" path="res://Art/PlaceHolder/mask_1.png" id="4_d5v1n"]
+[ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="5_ul4l5"]
 
 [sub_resource type="Animation" id="Animation_qrbj0"]
 length = 0.001
@@ -85,6 +86,7 @@ offset_left = 971.0
 offset_top = 97.0
 offset_right = 1140.0
 offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("5_ul4l5")
 theme_override_font_sizes/font_size = 66
 text = "00:00"
 
