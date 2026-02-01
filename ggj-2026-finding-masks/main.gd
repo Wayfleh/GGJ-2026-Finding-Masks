@@ -15,7 +15,7 @@ var target_index: int = -1
 @onready var curr_thresh = 0
 @export var max_threshold = 5
 @export var max_level = 10
-@export var difficulty_factor = 2
+@export var masks_per_level = 2
 @export var mask_minimum_size = 0.5
 @export var mask_scale_factor = 1
 

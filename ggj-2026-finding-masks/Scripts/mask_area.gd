@@ -107,7 +107,7 @@ func reset_round() -> void:
 	clear_masks()
 	await get_tree().process_frame
 	found_target = false
-	mask_manager(10 + (main.level * 2))
+	mask_manager(10 + (main.level * main.masks_per_level))
 	
 #helper function for reset_round that clears all masks in screen
 func clear_masks() -> void:
