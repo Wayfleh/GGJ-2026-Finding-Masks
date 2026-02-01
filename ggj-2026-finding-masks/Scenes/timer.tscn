@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://t0j2jdb566ee"]
 
 [ext_resource type="Script" uid="uid://d1v3ul2rrxyp6" path="res://Scripts/timer.gd" id="1_s7d24"]
+[ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="2_ycw00"]
 
 [node name="Timer" type="Control" unique_id=642478930]
 layout_mode = 3
@@ -35,6 +36,7 @@ alignment = 1
 
 [node name="Label" type="Label" parent="Control/VBoxContainer" unique_id=1476208800]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ycw00")
 theme_override_font_sizes/font_size = 60
 text = "Find this mask"
 
@@ -54,6 +56,7 @@ offset_top = -3.0
 offset_right = -244.0
 offset_bottom = 88.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ycw00")
 theme_override_font_sizes/font_size = 66
 text = "00:00"
 

@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://bpmfxvnc7t4px" path="res://Art/MenuButtons/Button_Play.png" id="2_n15yj"]
 [ext_resource type="Texture2D" uid="uid://3fdes21lrwce" path="res://Art/MenuButtons/Button_Credits.png" id="3_emot1"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="4_i5sur"]
+[ext_resource type="Texture2D" uid="uid://b0naojqickviw" path="res://Art/backgrounds/title-screen-bg.png" id="5_emot1"]
+[ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="5_i5sur"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
 font_size = 64
@@ -17,7 +19,15 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fnlyl")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1058133106]
+z_index = -1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_emot1")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=811457834]
+z_index = 1
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -65,6 +75,7 @@ offset_right = 297.0
 offset_bottom = -211.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_i5sur")
 text = "Mask Finder"
 label_settings = SubResource("LabelSettings_fnlyl")
 horizontal_alignment = 1
