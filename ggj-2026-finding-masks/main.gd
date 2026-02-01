@@ -25,15 +25,9 @@ func _ready() -> void:
 func _on_round_won() -> void:
 	var old : = target_index
 	while target_index == old:
-		target_index = randi_range(0,6)
-		
-		game_timer.update_target_image()
-		
-		mask_area.reset_round()
-		
-		scoreCounter.incrementAndUpdateScore()
 		target_index = randi_range(0, mask_sprites.size() - 1)
 	
+	#updates threshold and updates level based on threshold
 	curr_thresh += 1
 	if curr_thresh >= max_threshold and level < max_level:
 		level += 1
@@ -43,6 +37,8 @@ func _on_round_won() -> void:
 	game_timer.update_target_image()
 	
 	mask_area.reset_round()
+	
+	scoreCounter.incrementAndUpdateScore()
 
 func _on_time_up() -> void:
 	mask_area.set_process(false)
