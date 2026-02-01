@@ -81,11 +81,14 @@ func _make_mask(index: int) -> Mask:
 	
 	#sets texture
 	mask.sprite.texture = main.mask_sprites[index]
+	mask.scale = mask.scale * (1.00 - (main.level * .01 * main.mask_scale_factor))
+	mask.scale = mask.scale.clamp(Vector2.ONE * main.mask_minimum_size,Vector2.ONE)
 	
 	#places the mask in a random position within the box
 	#the radius of the collider is 90px
-	mask.global_position.x = randi_range(278 + 90, 1364 - 90)
-	mask.global_position.y = randi_range(312 + 90, 1080 - 90)
+	var px_scale = mask.scale.x * 90
+	mask.global_position.x = randi_range(278 + px_scale, 1642 - px_scale)
+	mask.global_position.y = randi_range(312 + px_scale, 1080 - px_scale)
 	
 	return mask
 

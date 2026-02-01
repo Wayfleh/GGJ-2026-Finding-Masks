@@ -16,6 +16,8 @@ var target_index: int = -1
 @export var max_threshold = 5
 @export var max_level = 10
 @export var difficulty_factor = 2
+@export var mask_minimum_size = 0.5
+@export var mask_scale_factor = 1
 
 func _ready() -> void:
 	target_index = randi_range(0, mask_sprites.size() - 1)

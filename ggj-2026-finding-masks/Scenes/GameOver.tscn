@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://btviw441pj6r8" path="res://Art/backgrounds/ggj_gloomlines.png" id="4_a14ly"]
 [ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="4_rdiyk"]
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/backgrounds/time-display.png" id="6_8710x"]
+[ext_resource type="Texture2D" uid="uid://dgvsf2po2eoe0" path="res://Art/PlaceHolder/trophy_placeholder.png" id="10_tr7xh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 128
@@ -92,12 +93,12 @@ label_settings = SubResource("LabelSettings_k52d1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1413010973]
+[node name="Gloom" type="Sprite2D" parent="." unique_id=1413010973]
 position = Vector2(1152, 681)
 texture = ExtResource("4_a14ly")
 hframes = 2
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=404998891]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Gloom" unique_id=404998891]
 libraries/ = SubResource("AnimationLibrary_6wu1n")
 autoplay = &"loop"
 
@@ -168,11 +169,14 @@ icon = ExtResource("3_uib17")
 flat = true
 expand_icon = true
 
-[connection signal="pressed" from="HBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
-[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1885194675]
 stream = ExtResource("2_8710x")
 autoplay = true
 
-[connection signal="pressed" from="VBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="Trophy" type="Sprite2D" parent="." unique_id=196807836]
+position = Vector2(1423, 587)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_tr7xh")
+
+[connection signal="pressed" from="HBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
