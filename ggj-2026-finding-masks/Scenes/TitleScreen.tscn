@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b0naojqickviw" path="res://Art/backgrounds/title-screen-bg.png" id="5_emot1"]
 [ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="5_i5sur"]
 [ext_resource type="PackedScene" uid="uid://caywmpaoluvak" path="res://Scenes/Credits.tscn" id="8_5c2t2"]
+[ext_resource type="Texture2D" uid="uid://cnmu3yh2t5hbi" path="res://Art/title-logo.png" id="9_bawyk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
 font_size = 64
@@ -74,6 +75,7 @@ flat = true
 expand_icon = true
 
 [node name="MaskFinder Title" type="Label" parent="TitleUI" unique_id=868534083]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -95,6 +97,15 @@ vertical_alignment = 1
 [node name="Credits" parent="." unique_id=1647245879 instance=ExtResource("8_5c2t2")]
 visible = false
 layout_mode = 1
+
+[node name="MasksofXiqu" type="TextureRect" parent="." unique_id=914268130]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 121.0
+offset_right = 2431.0
+offset_bottom = 501.0
+scale = Vector2(0.515, 0.515)
+texture = ExtResource("9_bawyk")
 
 [connection signal="pressed" from="TitleUI/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="TitleUI/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]

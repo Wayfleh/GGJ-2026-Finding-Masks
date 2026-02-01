@@ -9,11 +9,17 @@
 [ext_resource type="Texture2D" uid="uid://btviw441pj6r8" path="res://Art/backgrounds/ggj_gloomlines.png" id="4_a14ly"]
 [ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="4_rdiyk"]
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/backgrounds/time-display.png" id="6_8710x"]
+[ext_resource type="Texture2D" uid="uid://buwaebagkmwy6" path="res://Art/MenuButtons/Button_Retry.png" id="7_tr7xh"]
 [ext_resource type="Texture2D" uid="uid://oucvfr0oak6q" path="res://Art/backgrounds/trophy.png" id="10_tr7xh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 128
 font_color = Color(0.78039217, 0.19607843, 0.12941177, 1)
+outline_size = 3
+outline_color = Color(0.22745098, 0.22745098, 0.105882354, 1)
+shadow_size = 20
+shadow_color = Color(0.22745098, 0.22745098, 0.105882354, 1)
+shadow_offset = Vector2(3.455, 3.09)
 
 [sub_resource type="Animation" id="Animation_tr7xh"]
 length = 0.001
@@ -103,9 +109,9 @@ autoplay = &"loop"
 z_index = 3
 layout_mode = 0
 offset_left = 1282.0
-offset_top = 271.0
+offset_top = 291.0
 offset_right = 1531.0
-offset_bottom = 389.0
+offset_bottom = 409.0
 text = "99"
 label_settings = ExtResource("4_rdiyk")
 horizontal_alignment = 1
@@ -125,9 +131,9 @@ texture = ExtResource("6_8710x")
 z_index = 3
 layout_mode = 0
 offset_left = 424.0
-offset_top = 279.0
+offset_top = 291.0
 offset_right = 673.0
-offset_bottom = 397.0
+offset_bottom = 409.0
 text = "99"
 label_settings = ExtResource("4_rdiyk")
 horizontal_alignment = 1
@@ -148,12 +154,20 @@ z_index = 3
 layout_mode = 1
 offset_left = 350.0
 offset_top = 799.0
-offset_right = 1633.0
+offset_right = 1639.0
 offset_bottom = 1078.0
 
-[node name="Title Screen" type="Button" parent="HBoxContainer" unique_id=887750059]
+[node name="Retry" type="Button" parent="HBoxContainer" unique_id=887750059]
 layout_mode = 2
 size_flags_horizontal = 3
+icon = ExtResource("7_tr7xh")
+flat = true
+expand_icon = true
+
+[node name="MainMenu" type="Button" parent="HBoxContainer" unique_id=1769854461]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 icon = ExtResource("2_ktc4i")
 flat = true
 expand_icon = true
@@ -171,9 +185,10 @@ stream = ExtResource("2_8710x")
 autoplay = true
 
 [node name="Trophy" type="Sprite2D" parent="." unique_id=196807836]
-position = Vector2(1168, 332)
+position = Vector2(1168, 352)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("10_tr7xh")
 
-[connection signal="pressed" from="HBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="HBoxContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="HBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -115,9 +115,9 @@ time = 90
 [node name="ScoreCounter" type="Label" parent="." unique_id=1993673624]
 layout_mode = 0
 offset_left = 1259.0
-offset_top = 205.0
+offset_top = 185.0
 offset_right = 1431.0
-offset_bottom = 293.0
+offset_bottom = 284.0
 text = "99"
 label_settings = ExtResource("14_h1bgf")
 horizontal_alignment = 1
@@ -127,11 +127,11 @@ script = ExtResource("12_6iyac")
 [node name="scoreBGBox" type="TextureRect" parent="ScoreCounter" unique_id=1568820551]
 z_index = -1
 layout_mode = 0
-offset_left = -60.0
-offset_top = -32.0
-offset_right = 500.0
-offset_bottom = 268.0
-scale = Vector2(0.53, 0.53)
+offset_left = -47.0
+offset_top = -20.0
+offset_right = 513.0
+offset_bottom = 280.0
+scale = Vector2(0.485, 0.485)
 texture = ExtResource("15_k12tt")
 
 [node name="TimerBGBox" type="TextureRect" parent="." unique_id=1325064534]
