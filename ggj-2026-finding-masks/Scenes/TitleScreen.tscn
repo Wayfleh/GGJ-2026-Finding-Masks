@@ -30,6 +30,7 @@ autoplay = true
 
 [node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1901690141]
 stream = ExtResource("3_qfyqv")
+volume_db = -21.0
 
 [node name="TitleUI" type="Control" parent="." unique_id=1368666004]
 anchors_preset = 0

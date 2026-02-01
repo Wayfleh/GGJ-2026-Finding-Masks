@@ -71,6 +71,7 @@ script = ExtResource("1_m5628")
 
 [node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1459169658]
 stream = ExtResource("2_6wu1n")
+volume_db = -21.0
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=653142775]
 layout_mode = 1
