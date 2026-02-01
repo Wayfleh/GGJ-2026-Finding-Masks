@@ -5,7 +5,7 @@ class_name GameMain extends Node
 #Currently that is timer.gd and mask_area.gd
 @export var mask_sprites: Array[Texture2D]
 
-var target_index: int = randi_range(0, mask_sprites.size() - 1)
+var target_index: int = -1
 
 @onready var mask_area: MaskArea = $MaskArea
 @onready var game_timer = $TimerArea
@@ -18,6 +18,7 @@ var target_index: int = randi_range(0, mask_sprites.size() - 1)
 @export var difficulty_factor = 2
 
 func _ready() -> void:
+	target_index = randi_range(0, mask_sprites.size() - 1)
 	mask_area.time_delta.connect(game_timer.apply_time_delta)
 	mask_area.round_won.connect(_on_round_won)
 	game_timer.time_up.connect(_on_time_up)

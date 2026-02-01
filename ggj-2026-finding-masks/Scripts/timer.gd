@@ -15,6 +15,7 @@ func _on_timer_timeout() -> void:
 #Grabs the target image from the main node's mask_sprites array
 #using its target index
 func _ready() -> void:
+	await main.ready
 	target_image.texture = main.mask_sprites[main.target_index]
 	timer.start(time)
 
