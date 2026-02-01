@@ -5,8 +5,8 @@
 [ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="3_7xmno"]
 [ext_resource type="Texture2D" uid="uid://dcy6vu3a5226t" path="res://Art/backgrounds/credits-bg.png" id="4_uy3b0"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_xbebw"]
-font_size = 64
+[sub_resource type="LabelSettings" id="LabelSettings_uy3b0"]
+font_size = 49
 
 [node name="Credits" type="Control" unique_id=1647245879]
 layout_mode = 3
@@ -41,23 +41,28 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -901.0
-offset_top = -445.0
-offset_right = 901.0
-offset_bottom = 380.5
+offset_left = -907.0
+offset_top = -527.0
+offset_right = 895.0
+offset_bottom = 298.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_7xmno")
-text = "Rafael
-Cristal
-Alan
-Kathryn
-Leilani
+theme_override_font_sizes/font_size = 8
+text = "Programming:
+Wayfleh01
+tabbu
+verynoname
 
+Art:
+Caustic_Kat
+cheesedcake
+
+sounds/music:
 Pexels - Donald Tong
 Pixabay
 DOVA-SYNDROME"
-label_settings = SubResource("LabelSettings_xbebw")
+label_settings = SubResource("LabelSettings_uy3b0")
 horizontal_alignment = 1
 
 [node name="background" type="TextureRect" parent="." unique_id=393823078]
