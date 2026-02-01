@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cekj3fjp3ck"]
 
 [ext_resource type="Script" uid="uid://dtto3ogvr7wri" path="res://Scripts/title_screen.gd" id="1_fnlyl"]
+[ext_resource type="AudioStream" uid="uid://cni83bjkkpdeh" path="res://sounds/飲茶.mp3" id="2_7whhf"]
 [ext_resource type="Texture2D" uid="uid://bpmfxvnc7t4px" path="res://Art/MenuButtons/Button_Play.png" id="2_n15yj"]
 [ext_resource type="Texture2D" uid="uid://3fdes21lrwce" path="res://Art/MenuButtons/Button_Credits.png" id="3_emot1"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="4_i5sur"]
@@ -18,6 +19,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fnlyl")
+
+[node name="TitleBGM" type="AudioStreamPlayer" parent="." unique_id=634666980]
+stream = ExtResource("2_7whhf")
+autoplay = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1058133106]
 z_index = -1
