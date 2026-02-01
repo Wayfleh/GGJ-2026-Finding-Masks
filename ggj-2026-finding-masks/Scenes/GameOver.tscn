@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://btviw441pj6r8" path="res://Art/backgrounds/ggj_gloomlines.png" id="4_a14ly"]
 [ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="4_rdiyk"]
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/backgrounds/time-display.png" id="6_8710x"]
-[ext_resource type="Texture2D" uid="uid://dgvsf2po2eoe0" path="res://Art/PlaceHolder/trophy_placeholder.png" id="10_tr7xh"]
+[ext_resource type="Texture2D" uid="uid://oucvfr0oak6q" path="res://Art/backgrounds/trophy.png" id="10_tr7xh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 128
@@ -172,7 +172,7 @@ autoplay = true
 
 [node name="Trophy" type="Sprite2D" parent="." unique_id=196807836]
 position = Vector2(1168, 332)
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("10_tr7xh")
 
 [connection signal="pressed" from="HBoxContainer/Title Screen" to="." method="_on_retry_pressed"]
