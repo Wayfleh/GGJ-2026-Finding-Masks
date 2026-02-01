@@ -17,6 +17,15 @@
 [ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="14_h1bgf"]
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/Backgrounds/time-display.png" id="15_k12tt"]
 [ext_resource type="Texture2D" uid="uid://5x3d6fb2x00q" path="res://Art/Backgrounds/ggjbackground_placeholderborder.png" id="15_wsu2k"]
+[ext_resource type="Texture2D" uid="uid://cdy12nxl8irbs" path="res://Art/backgrounds/ggjbackground_theater2.png" id="10_jkdf5"]
+[ext_resource type="AudioStream" uid="uid://cg4v7opineq3v" path="res://sounds/old-zildjian-gong-quite-natural-34294.mp3" id="10_wsu2k"]
+[ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
+[ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
+[ext_resource type="AudioStream" uid="uid://hhroyw28bv51" path="res://sounds/Soldiers.mp3" id="16_k12tt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdnlq"]
+font_size = 64
+font_color = Color(0.95686275, 0.9098039, 0.17254902, 1)
 
 [node name="main" type="Control" unique_id=2082938059]
 layout_mode = 3
@@ -29,7 +38,11 @@ mouse_filter = 1
 script = ExtResource("1_8gbba")
 mask_sprites = Array[Texture2D]([ExtResource("2_fdnlq"), ExtResource("3_jkdf5"), ExtResource("4_wsu2k"), ExtResource("5_k12tt"), ExtResource("6_h1bgf"), ExtResource("7_b3802"), ExtResource("8_fevyy"), ExtResource("9_hibaj")])
 
-[node name="background" type="TextureRect" parent="." unique_id=1232712032]
+[node name="StartSfx" type="AudioStreamPlayer" parent="." unique_id=2095566873]
+stream = ExtResource("10_wsu2k")
+autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1232712032]
 z_index = -3
 layout_mode = 1
 anchors_preset = 15
@@ -113,3 +126,7 @@ offset_right = 1728.0
 offset_bottom = 317.0
 scale = Vector2(0.69, 0.69)
 texture = ExtResource("15_k12tt")
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1967930388]
+stream = ExtResource("16_k12tt")
+volume_db = -2.0
+autoplay = true
