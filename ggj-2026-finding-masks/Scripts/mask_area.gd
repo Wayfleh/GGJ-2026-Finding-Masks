@@ -6,9 +6,15 @@ var time_dec : int = -15
 @onready var target_mask : Mask = null
 @onready var found_target : bool = false
 @onready var main: GameMain = owner
+@onready var bgm: AudioStreamPlayer = $BGM
+
+
 
 signal round_won
 signal time_delta(seconds: int)
+signal correct_clicked
+signal wrong_clicked
+
 
 var clickCorrectTextParticle: PackedScene = preload("res://Scenes/ClickCorrectTextParticle.tscn")
 var clickWrongTextParticle: PackedScene = preload("res://Scenes/ClickWrongTextParticle.tscn")
@@ -24,6 +30,8 @@ func _process(delta: float) -> void:
 		
 		if IsTargetMaskInMaskCache(target_mask, mask_cache):
 			print("target found!!!")
+			
+			correct_clicked.emit()
 			time_delta.emit(time_inc)
 			var particle = clickCorrectTextParticle.instantiate()
 			CenterControlNodeOnMouse(particle)
@@ -36,6 +44,7 @@ func _process(delta: float) -> void:
 			CenterControlNodeOnMouse(particle)
 			add_child(particle)
 			print("wrong mask!")
+			wrong_clicked.emit() 
 			time_delta.emit(time_dec)
 			
 			#TODO - connect this signal to a new function here or in Main
