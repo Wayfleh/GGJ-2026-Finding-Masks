@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/backgrounds/time-display.png" id="6_8710x"]
 [ext_resource type="Texture2D" uid="uid://buwaebagkmwy6" path="res://Art/MenuButtons/Button_Retry.png" id="7_tr7xh"]
 [ext_resource type="Texture2D" uid="uid://bbogmrl4uluhi" path="res://Art/PlaceHolder/trophy-updated.png" id="11_w0gmt"]
+[ext_resource type="AudioStream" uid="uid://gq63st0ieau7" path="res://sounds/BOOOOOOOOOO.mp3" id="12_aa261"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 128
@@ -187,10 +188,12 @@ expand_icon = true
 
 [node name="LossJingle" type="AudioStreamPlayer" parent="." unique_id=1885194675]
 stream = ExtResource("2_8710x")
-volume_db = -15.0
+volume_db = -7.0
 autoplay = true
 
 [node name="Booing" type="AudioStreamPlayer" parent="." unique_id=582511933]
+stream = ExtResource("12_aa261")
+volume_db = -14.0
 autoplay = true
 
 [node name="Trophy" type="Sprite2D" parent="." unique_id=196807836]
