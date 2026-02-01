@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://csdvajrf5bkri"]
+[gd_scene format=3 uid="uid://cwvpqniu3elqe"]
 
-[ext_resource type="Script" path="res://Scripts/FloatingTextParticle.gd" id="1_sjacg"]
-[ext_resource type="LabelSettings" uid="uid://bc5nyq8s4et7f" path="res://ClickWrongTextParticle.tres" id="1_y4l58"]
+[ext_resource type="Script" uid="uid://qd4xbr783hbv" path="res://Scripts/FloatingTextParticle.gd" id="1_sjacg"]
+[ext_resource type="LabelSettings" uid="uid://bhawtcwv0m7pw" path="res://ClickWrongTextParticle.tres" id="1_y4l58"]
 
 [node name="ClickWrongTextParticle" type="Label" unique_id=2105903415]
 z_index = 5

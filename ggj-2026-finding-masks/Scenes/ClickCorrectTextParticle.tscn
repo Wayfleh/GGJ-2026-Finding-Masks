@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://cc6nnspr0ofix"]
+[gd_scene format=3 uid="uid://cbfby7mgcgm23"]
 
-[ext_resource type="Script" path="res://Scripts/FloatingTextParticle.gd" id="1_m3y23"]
-[ext_resource type="LabelSettings" uid="uid://dxu23eoghmxk7" path="res://ClickCorrectTextParticle.tres" id="2_n17wr"]
+[ext_resource type="Script" uid="uid://qd4xbr783hbv" path="res://Scripts/FloatingTextParticle.gd" id="1_m3y23"]
+[ext_resource type="LabelSettings" uid="uid://c34h0eg7fm7xr" path="res://ClickCorrectTextParticle.tres" id="2_n17wr"]
 
 [node name="ClickCorrectTextParticle" type="Label" unique_id=1863241894]
 z_index = 5
 offset_right = 258.0
 offset_bottom = 67.0
-text = "+2 Seconds"
+text = "+5 Seconds"
 label_settings = ExtResource("2_n17wr")
 script = ExtResource("1_m3y23")

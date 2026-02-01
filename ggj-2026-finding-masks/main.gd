@@ -19,14 +19,13 @@ func _on_round_won() -> void:
 	var old := target_index
 	while target_index == old:
 		target_index = randi_range(0,6)
-		
-		game_timer.update_target_image()
-		
-		mask_area.reset_round()
+	
+	game_timer.update_target_image()
+	
+	mask_area.reset_round()
 
 func _on_time_up() -> void:
 	mask_area.set_process(false)
 	game_timer.set_process(false)
-	game_timer.timer.stop()
-	get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
 	game_timer.stop_timer()
+	get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")

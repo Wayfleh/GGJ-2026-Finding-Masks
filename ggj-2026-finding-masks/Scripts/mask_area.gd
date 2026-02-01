@@ -1,7 +1,7 @@
 class_name MaskArea extends Control
 
 var mask_cache : Array[Mask] = []
-var time_inc : int = 5
+var time_inc : int = 2
 var time_dec : int = -15
 @onready var target_mask : Mask = null
 @onready var found_target : bool = false
@@ -10,6 +10,9 @@ var time_dec : int = -15
 signal level_complete
 signal round_won
 signal time_delta(seconds: int)
+
+var clickCorrectTextParticle: PackedScene = preload("res://Scenes/ClickCorrectTextParticle.tscn")
+var clickWrongTextParticle: PackedScene = preload("res://Scenes/ClickWrongTextParticle.tscn")
 
 func _ready() -> void:
 	mask_manager(10, 1)
@@ -22,11 +25,19 @@ func _process(delta: float) -> void:
 		#mask is found
 		var clicked_mask: Mask = mask_cache[0]
 		
-		if clicked_mask == target_mask:
+		if IsTargetMaskInMaskCache(target_mask, mask_cache):
 			print("target found!!!")
 			time_delta.emit(time_inc)
+			var particle = clickCorrectTextParticle.instantiate()
+			CenterControlNodeOnMouse(particle)
+			add_child(particle)
+			#Simply create and set the position of the particle.
+			# The particle is scripted to delete itself via FloatingTextParticle.gd
 			round_won.emit()
 		else:
+			var particle = clickWrongTextParticle.instantiate()
+			CenterControlNodeOnMouse(particle)
+			add_child(particle)
 			print("wrong mask!")
 			time_delta.emit(time_dec)
 			
@@ -88,8 +99,23 @@ func reset_round() -> void:
 	
 #helper function for reset_round that clears all masks in screen
 func clear_masks() -> void:
-	mask_cache.clear()
-	
 	for child in get_children():
 		if child is Mask:
 			child.queue_free()
+	mask_cache.clear()
+	
+
+func IsTargetMaskInMaskCache(target: Mask, cache:Array[Mask]) -> bool:
+	for mask: Mask in cache:
+		if mask == target:
+			return true
+	return false
+
+func CenterControlNodeOnMouse(object: Control):
+	var mousePos: Vector2 = get_local_mouse_position()
+	object.global_position.x = mousePos.x - (object.size.x / 2)
+	object.global_position.y = mousePos.y - (object.size.y / 2)
+	print("label position: " + str(object.global_position))
+	print("mousePos: " + str(mousePos))
+	print("object.size: " + str(object.size))
+	pass
