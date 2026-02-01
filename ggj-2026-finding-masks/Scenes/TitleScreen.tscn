@@ -31,6 +31,15 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="MasksofXiqu" type="TextureRect" parent="TitleUI" unique_id=914268130]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 121.0
+offset_right = 2431.0
+offset_bottom = 501.0
+scale = Vector2(0.515, 0.515)
+texture = ExtResource("9_bawyk")
+
 [node name="TextureRect" type="TextureRect" parent="TitleUI" unique_id=1058133106]
 z_index = -1
 layout_mode = 0
@@ -97,15 +106,6 @@ vertical_alignment = 1
 [node name="Credits" parent="." unique_id=1647245879 instance=ExtResource("8_5c2t2")]
 visible = false
 layout_mode = 1
-
-[node name="MasksofXiqu" type="TextureRect" parent="." unique_id=914268130]
-layout_mode = 0
-offset_left = 511.0
-offset_top = 121.0
-offset_right = 2431.0
-offset_bottom = 501.0
-scale = Vector2(0.515, 0.515)
-texture = ExtResource("9_bawyk")
 
 [connection signal="pressed" from="TitleUI/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="TitleUI/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
