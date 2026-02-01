@@ -27,7 +27,7 @@ func _on_round_won() -> void:
 		target_index = randi_range(0, mask_sprites.size() - 1)
 	
 	curr_thresh += 1
-	if curr_thresh >= threshold and level < max_level:
+	if curr_thresh >= max_threshold and level < max_level:
 		level += 1
 		curr_thresh = 0
 		

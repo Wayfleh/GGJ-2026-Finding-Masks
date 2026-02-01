@@ -23,9 +23,6 @@ grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_8gbba")
 mask_sprites = Array[Texture2D]([ExtResource("2_fdnlq"), ExtResource("3_jkdf5"), ExtResource("4_wsu2k"), ExtResource("5_k12tt"), ExtResource("6_h1bgf"), ExtResource("7_b3802"), ExtResource("8_fevyy"), ExtResource("9_hibaj")])
-threshold = null
-max_level = null
-difficulty_factor = null
 
 [node name="MaskArea" type="TextureRect" parent="." unique_id=1902004965]
 unique_name_in_owner = true
