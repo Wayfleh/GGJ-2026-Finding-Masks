@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://cg4v7opineq3v" path="res://sounds/old-zildjian-gong-quite-natural-34294.mp3" id="10_wsu2k"]
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 [ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
+[ext_resource type="AudioStream" uid="uid://hhroyw28bv51" path="res://sounds/Soldiers.mp3" id="16_k12tt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fdnlq"]
 font_size = 64
@@ -88,3 +89,8 @@ label_settings = SubResource("LabelSettings_fdnlq")
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("12_6iyac")
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1967930388]
+stream = ExtResource("16_k12tt")
+volume_db = -2.0
+autoplay = true
