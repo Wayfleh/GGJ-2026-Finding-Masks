@@ -3,6 +3,7 @@ extends Control
 @onready var click_sfx: AudioStreamPlayer = $ClickSfx
 @onready var title_ui: Control = $TitleUI
 @onready var credits_ui: Control = $Credits
+@onready var button_click: AudioStreamPlayer = $buttonClick
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,11 +29,13 @@ func _on_start_button_pressed() -> void:
 	
 
 func _on_credits_button_pressed() -> void:
+	button_click.play()
 	title_ui.visible = false
 	credits_ui.visible = true
 
 
 func _on_credits_back_pressed() -> void:
+	button_click.play()
 	credits_ui.visible = false
 	title_ui.visible = true
 

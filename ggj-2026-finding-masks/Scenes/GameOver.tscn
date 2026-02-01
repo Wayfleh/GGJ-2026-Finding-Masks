@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bj1mea4hn8y71"]
 
 [ext_resource type="Script" uid="uid://dw5budm2aonfi" path="res://Scripts/game_over.gd" id="1_m5628"]
+[ext_resource type="AudioStream" uid="uid://o2rp7w4kdco7" path="res://sounds/battle-pop-424581.mp3" id="2_6wu1n"]
 [ext_resource type="AudioStream" uid="uid://c3j25of0rtbhm" path="res://sounds/game-over-417465.mp3" id="2_8710x"]
 [ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_ktc4i"]
 [ext_resource type="Texture2D" uid="uid://demyn0cfb4g3n" path="res://Art/backgrounds/ggjgameover_screen.png" id="2_rdiyk"]
@@ -67,6 +68,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_m5628")
+
+[node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1459169658]
+stream = ExtResource("2_6wu1n")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=653142775]
 layout_mode = 1
