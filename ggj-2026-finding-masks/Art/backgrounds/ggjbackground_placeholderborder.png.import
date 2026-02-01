@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5x3d6fb2x00q"
-path="res://.godot/imported/ggjbackground_placeholderborder.png-15e76f708933cac6d90fbeddb471bb8b.ctex"
+path="res://.godot/imported/ggjbackground_placeholderborder.png-5f1f39541d74234f003b3bd33fc4ed04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Backgrounds/ggjbackground_placeholderborder.png"
-dest_files=["res://.godot/imported/ggjbackground_placeholderborder.png-15e76f708933cac6d90fbeddb471bb8b.ctex"]
+source_file="res://Art/backgrounds/ggjbackground_placeholderborder.png"
+dest_files=["res://.godot/imported/ggjbackground_placeholderborder.png-5f1f39541d74234f003b3bd33fc4ed04.ctex"]
 
 [params]
 

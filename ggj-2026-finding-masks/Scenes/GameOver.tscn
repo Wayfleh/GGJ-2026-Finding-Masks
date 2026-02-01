@@ -1,17 +1,55 @@
-[gd_scene format=3 uid="uid://cv66uwn0fsgje"]
+[gd_scene format=3 uid="uid://bj1mea4hn8y71"]
 
 [ext_resource type="Script" uid="uid://dw5budm2aonfi" path="res://Scripts/game_over.gd" id="1_m5628"]
 [ext_resource type="Texture2D" uid="uid://dtv8tww3raylr" path="res://Art/MenuButtons/Button_Menu.png" id="2_ktc4i"]
 [ext_resource type="Texture2D" uid="uid://demyn0cfb4g3n" path="res://Art/backgrounds/ggjgameover_screen.png" id="2_rdiyk"]
 [ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="2_uib17"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="3_uib17"]
+[ext_resource type="Texture2D" uid="uid://btviw441pj6r8" path="res://Art/backgrounds/ggj_gloomlines.png" id="4_a14ly"]
 [ext_resource type="LabelSettings" uid="uid://dufnjapb05iti" path="res://Score.tres" id="4_rdiyk"]
-[ext_resource type="Script" uid="uid://d0hyig544v2mt" path="res://Scripts/Score_GameOver.gd" id="5_rdiyk"]
 [ext_resource type="Texture2D" uid="uid://dy1irx0cfhbhn" path="res://Art/backgrounds/time-display.png" id="6_8710x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k52d1"]
 font_size = 128
 font_color = Color(0.78039217, 0.19607843, 0.12941177, 1)
+
+[sub_resource type="Animation" id="Animation_tr7xh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_w0gmt"]
+resource_name = "loop"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wu1n"]
+_data = {
+&"RESET": SubResource("Animation_tr7xh"),
+&"loop": SubResource("Animation_w0gmt")
+}
 
 [node name="GameOver" type="Control" unique_id=1971343732]
 layout_mode = 3
@@ -53,31 +91,48 @@ label_settings = SubResource("LabelSettings_k52d1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1216075697]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -134.5
-offset_top = -377.0
-offset_right = 306.5
-grow_horizontal = 2
-grow_vertical = 0
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1413010973]
+position = Vector2(1152, 681)
+texture = ExtResource("4_a14ly")
+hframes = 2
 
-[node name="Score" type="Label" parent="." unique_id=2125990004]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=404998891]
+libraries/ = SubResource("AnimationLibrary_6wu1n")
+autoplay = &"loop"
+
+[node name="HighScore" type="Label" parent="." unique_id=1717284500]
 z_index = 3
 layout_mode = 0
-offset_left = 1071.0
-offset_top = 514.0
-offset_right = 1320.0
-offset_bottom = 632.0
+offset_left = 1537.0
+offset_top = 526.0
+offset_right = 1786.0
+offset_bottom = 644.0
 text = "99"
 label_settings = ExtResource("4_rdiyk")
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("5_rdiyk")
+
+[node name="TextureRect" type="TextureRect" parent="HighScore" unique_id=648206820]
+z_index = -1
+layout_mode = 0
+offset_left = -50.0
+offset_top = -41.999985
+offset_right = 510.0
+offset_bottom = 258.0
+scale = Vector2(0.639, 0.7)
+texture = ExtResource("6_8710x")
+
+[node name="Score" type="Label" parent="." unique_id=2125990004]
+z_index = 3
+layout_mode = 0
+offset_left = 679.0
+offset_top = 534.0
+offset_right = 928.0
+offset_bottom = 652.0
+text = "99"
+label_settings = ExtResource("4_rdiyk")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="Score" unique_id=1637593056]
 z_index = -1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://demyn0cfb4g3n"
-path="res://.godot/imported/ggjgameover_screen.png-fff9a733b4d79a2fc5466f778896f1f1.ctex"
+uid="uid://btviw441pj6r8"
+path="res://.godot/imported/ggj_gloomlines.png-ff32695bd119e69fed17071ad821c91f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/backgrounds/ggjgameover_screen.png"
-dest_files=["res://.godot/imported/ggjgameover_screen.png-fff9a733b4d79a2fc5466f778896f1f1.ctex"]
+source_file="res://Art/backgrounds/ggj_gloomlines.png"
+dest_files=["res://.godot/imported/ggj_gloomlines.png-ff32695bd119e69fed17071ad821c91f.ctex"]
 
 [params]
 
