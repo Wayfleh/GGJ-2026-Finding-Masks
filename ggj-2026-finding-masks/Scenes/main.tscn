@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dgyfuuafsp633" path="res://Art/Masks/mask_7.png" id="8_fevyy"]
 [ext_resource type="Texture2D" uid="uid://dxynyg61kbrjf" path="res://Art/PlaceHolder/background/ggjbackground_placeholder.png" id="9_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://cq8gxvqkes0i8" path="res://Art/Masks/mask_8.png" id="9_hibaj"]
-[ext_resource type="Texture2D" uid="uid://cdy12nxl8irbs" path="res://Art/Backgrounds/ggjbackground_theater2.png" id="10_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://cdy12nxl8irbs" path="res://Art/backgrounds/ggjbackground_theater2.png" id="10_jkdf5"]
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 [ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
 
