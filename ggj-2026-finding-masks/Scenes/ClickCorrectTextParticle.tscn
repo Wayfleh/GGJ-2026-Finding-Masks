@@ -7,6 +7,6 @@
 z_index = 5
 offset_right = 258.0
 offset_bottom = 67.0
-text = "+5 Seconds"
+text = "+2 Seconds"
 label_settings = ExtResource("2_n17wr")
 script = ExtResource("1_m3y23")
