@@ -137,10 +137,10 @@ texture = ExtResource("15_k12tt")
 [node name="TimerBGBox" type="TextureRect" parent="." unique_id=1325064534]
 z_index = -1
 layout_mode = 0
-offset_left = 1168.0
-offset_top = 17.0
-offset_right = 1728.0
-offset_bottom = 317.0
+offset_left = 1155.0
+offset_top = -12.0
+offset_right = 1715.0
+offset_bottom = 288.0
 scale = Vector2(0.69, 0.69)
 texture = ExtResource("15_k12tt")
 

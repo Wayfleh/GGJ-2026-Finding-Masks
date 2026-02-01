@@ -86,10 +86,10 @@ one_shot = true
 
 [node name="Label" type="Label" parent="." unique_id=2284020]
 layout_mode = 0
-offset_left = 961.0
-offset_top = 67.0
-offset_right = 1183.0
-offset_bottom = 158.0
+offset_left = 947.0
+offset_top = 37.0
+offset_right = 1189.0
+offset_bottom = 128.0
 theme_override_fonts/font = ExtResource("5_ul4l5")
 theme_override_font_sizes/font_size = 66
 text = "00:00"
