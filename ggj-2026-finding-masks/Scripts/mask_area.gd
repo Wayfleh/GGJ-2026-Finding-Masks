@@ -99,17 +99,18 @@ func reset_round() -> void:
 	
 #helper function for reset_round that clears all masks in screen
 func clear_masks() -> void:
-	mask_cache.clear()
-	
 	for child in get_children():
 		if child is Mask:
 			child.queue_free()
-			
+	mask_cache.clear()
+	
+
 func IsTargetMaskInMaskCache(target: Mask, cache:Array[Mask]) -> bool:
 	for mask: Mask in cache:
 		if mask == target:
 			return true
 	return false
+
 func CenterControlNodeOnMouse(object: Control):
 	var mousePos: Vector2 = get_local_mouse_position()
 	object.global_position.x = mousePos.x - (object.size.x / 2)
