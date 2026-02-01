@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://cni83bjkkpdeh" path="res://sounds/飲茶.mp3" id="2_7whhf"]
 [ext_resource type="Texture2D" uid="uid://bpmfxvnc7t4px" path="res://Art/MenuButtons/Button_Play.png" id="2_n15yj"]
 [ext_resource type="Texture2D" uid="uid://3fdes21lrwce" path="res://Art/MenuButtons/Button_Credits.png" id="3_emot1"]
+[ext_resource type="AudioStream" uid="uid://o2rp7w4kdco7" path="res://sounds/battle-pop-424581.mp3" id="3_qfyqv"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="4_i5sur"]
 [ext_resource type="Texture2D" uid="uid://b0naojqickviw" path="res://Art/backgrounds/title-screen-bg.png" id="5_emot1"]
 [ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="5_i5sur"]
@@ -25,6 +26,9 @@ script = ExtResource("1_fnlyl")
 [node name="TitleBGM" type="AudioStreamPlayer" parent="." unique_id=634666980]
 stream = ExtResource("2_7whhf")
 autoplay = true
+
+[node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1901690141]
+stream = ExtResource("3_qfyqv")
 
 [node name="TitleUI" type="Control" parent="." unique_id=1368666004]
 anchors_preset = 0
