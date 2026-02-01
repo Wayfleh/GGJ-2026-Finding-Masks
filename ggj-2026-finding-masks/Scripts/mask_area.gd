@@ -13,8 +13,6 @@ signal time_delta(seconds: int)
 var clickCorrectTextParticle: PackedScene = preload("res://Scenes/ClickCorrectTextParticle.tscn")
 var clickWrongTextParticle: PackedScene = preload("res://Scenes/ClickWrongTextParticle.tscn")
 
-func _ready() -> void:
-	mask_manager(10)
 	
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("click"):

@@ -21,6 +21,7 @@ func _ready() -> void:
 	mask_area.time_delta.connect(game_timer.apply_time_delta)
 	mask_area.round_won.connect(_on_round_won)
 	game_timer.time_up.connect(_on_time_up)
+	mask_area.reset_round()
 
 func _on_round_won() -> void:
 	var old : = target_index
