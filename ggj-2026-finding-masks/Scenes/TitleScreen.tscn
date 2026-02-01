@@ -3,13 +3,13 @@
 [ext_resource type="Script" uid="uid://dtto3ogvr7wri" path="res://Scripts/title_screen.gd" id="1_fnlyl"]
 [ext_resource type="AudioStream" uid="uid://cni83bjkkpdeh" path="res://sounds/飲茶.mp3" id="2_7whhf"]
 [ext_resource type="Texture2D" uid="uid://bpmfxvnc7t4px" path="res://Art/MenuButtons/Button_Play.png" id="2_n15yj"]
+[ext_resource type="Texture2D" uid="uid://d11pabbf03l6l" path="res://Art/title_scroll.png" id="3_bawyk"]
 [ext_resource type="Texture2D" uid="uid://3fdes21lrwce" path="res://Art/MenuButtons/Button_Credits.png" id="3_emot1"]
 [ext_resource type="AudioStream" uid="uid://o2rp7w4kdco7" path="res://sounds/battle-pop-424581.mp3" id="3_qfyqv"]
 [ext_resource type="Texture2D" uid="uid://cewwxg576vqg" path="res://Art/MenuButtons/Button_Quit.png" id="4_i5sur"]
 [ext_resource type="Texture2D" uid="uid://b0naojqickviw" path="res://Art/backgrounds/title-screen-bg.png" id="5_emot1"]
 [ext_resource type="FontFile" uid="uid://udl437jrjrid" path="res://Art/Lacquer/Lacquer-Regular.ttf" id="5_i5sur"]
 [ext_resource type="PackedScene" uid="uid://caywmpaoluvak" path="res://Scenes/Credits.tscn" id="8_5c2t2"]
-[ext_resource type="Texture2D" uid="uid://cnmu3yh2t5hbi" path="res://Art/title-logo.png" id="9_bawyk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fnlyl"]
 font_size = 64
@@ -25,6 +25,7 @@ script = ExtResource("1_fnlyl")
 
 [node name="TitleBGM" type="AudioStreamPlayer" parent="." unique_id=634666980]
 stream = ExtResource("2_7whhf")
+volume_db = -22.0
 autoplay = true
 
 [node name="buttonClick" type="AudioStreamPlayer" parent="." unique_id=1901690141]
@@ -36,13 +37,13 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="MasksofXiqu" type="TextureRect" parent="TitleUI" unique_id=914268130]
-layout_mode = 0
-offset_left = 511.0
-offset_top = 121.0
-offset_right = 2431.0
-offset_bottom = 501.0
+layout_mode = 1
+offset_left = 314.0
+offset_top = 74.00001
+offset_right = 2914.0
+offset_bottom = 874.0
 scale = Vector2(0.515, 0.515)
-texture = ExtResource("9_bawyk")
+texture = ExtResource("3_bawyk")
 
 [node name="TextureRect" type="TextureRect" parent="TitleUI" unique_id=1058133106]
 z_index = -1
