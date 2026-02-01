@@ -1,5 +1,17 @@
 class_name Main extends Node2D
 
+@onready var sfx: AudioStreamPlayer = $SFX
+@export var correct_sound: AudioStream
+@export var wrong_sound: AudioStream
+
+func play_correct_sfx() -> void:
+	sfx.stream = correct_sound
+	sfx.play()
+
+func play_wrong_sfx() -> void:
+	sfx.stream = wrong_sound
+	sfx.play()
+	
 var mask_sprites: Array[CompressedTexture2D] = [
 	preload("res://Art/PlaceHolder/mask_1.png"),
 	preload("res://Art/PlaceHolder/mask_2.png"),

@@ -22,6 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://b04nq35g8mwac" path="res://Scenes/timer_area.tscn" id="11_6iyac"]
 [ext_resource type="Script" uid="uid://bl734leisfmut" path="res://Scripts/score_level_tracker.gd" id="12_6iyac"]
 [ext_resource type="AudioStream" uid="uid://hhroyw28bv51" path="res://sounds/Soldiers.mp3" id="16_k12tt"]
+[ext_resource type="AudioStream" uid="uid://d0l0bl80wlbsl" path="res://sounds/correct-6033.mp3" id="17_b3802"]
+[ext_resource type="AudioStream" uid="uid://dctj7rwdlgwe4" path="res://sounds/failure-drum-sound-effect-2-7184.mp3" id="18_fevyy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fdnlq"]
 font_size = 64
@@ -71,6 +73,14 @@ texture = ExtResource("9_d1ilt")
 expand_mode = 1
 stretch_mode = 4
 script = ExtResource("1_jjgbg")
+
+[node name="WrongSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=225063901]
+stream = ExtResource("18_fevyy")
+volume_db = 5.0
+
+[node name="CorrectSFX" type="AudioStreamPlayer" parent="MaskArea" unique_id=1945087977]
+stream = ExtResource("17_b3802")
+volume_db = 5.0
 
 [node name="TimerArea" parent="." unique_id=1383649617 instance=ExtResource("11_6iyac")]
 z_index = 2
